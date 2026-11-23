@@ -137,7 +137,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/eye_icon"
         app:layout_constraintBottom_toBottomOf="@id/favorite"
-        app:layout_constraintEnd_toStartOf="@id/share_number"
+        app:layout_constraintEnd_toStartOf="@id/view_number"
         app:layout_constraintTop_toTopOf="@id/favorite"
         app:srcCompat="@drawable/baseline_remove_red_eye_24" />
 
