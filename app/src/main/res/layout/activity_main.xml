@@ -86,25 +86,25 @@
         app:constraint_referenced_ids="content" />
 
     <ImageButton
-        android:id="@+id/favorite"
+        android:id="@+id/like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/common_spacing"
         android:layout_marginEnd="@dimen/common_spacing"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/favorite_icon"
+        android:contentDescription="@string/like_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/barrier2"
-        app:srcCompat="@drawable/baseline_favorite_border_24" />
+        app:srcCompat="@drawable/ic_like_24" />
 
     <TextView
-        android:id="@+id/like_number"
+        android:id="@+id/likeCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8dp"
-        app:layout_constraintBottom_toBottomOf="@id/favorite"
-        app:layout_constraintStart_toEndOf="@id/favorite"
-        app:layout_constraintTop_toTopOf="@id/favorite"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/like"
+        app:layout_constraintTop_toTopOf="@id/like"
         tools:text="10" />
 
     <ImageButton
@@ -114,13 +114,13 @@
         android:layout_marginStart="@dimen/_24dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/share_icon"
-        app:layout_constraintBottom_toBottomOf="@id/favorite"
-        app:layout_constraintStart_toEndOf="@id/like_number"
-        app:layout_constraintTop_toTopOf="@id/favorite"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/likeCount"
+        app:layout_constraintTop_toTopOf="@id/like"
         app:srcCompat="@drawable/baseline_share_24" />
 
     <TextView
-        android:id="@+id/share_number"
+        android:id="@+id/shareCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8dp"
@@ -130,24 +130,24 @@
         tools:text="5" />
 
     <ImageButton
-        android:id="@+id/eye"
+        android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_8dp"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/eye_icon"
-        app:layout_constraintBottom_toBottomOf="@id/favorite"
-        app:layout_constraintEnd_toStartOf="@id/view_number"
-        app:layout_constraintTop_toTopOf="@id/favorite"
+        android:contentDescription="@string/view_icon"
+        app:layout_constraintBottom_toBottomOf="@id/like"
+        app:layout_constraintEnd_toStartOf="@id/viewCount"
+        app:layout_constraintTop_toTopOf="@id/like"
         app:srcCompat="@drawable/baseline_remove_red_eye_24" />
 
     <TextView
-        android:id="@+id/view_number"
+        android:id="@+id/viewCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/eye"
+        app:layout_constraintBottom_toBottomOf="@id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/eye"
+        app:layout_constraintTop_toTopOf="@id/view"
         tools:text="5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

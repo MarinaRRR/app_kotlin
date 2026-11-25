@@ -4,7 +4,7 @@
     <string name="hello_world">Hello World</string>
     <string name="description_post_author_avatar">Post author avatar</string>
     <string name="description_post_menu">Post menu</string>
-    <string name="favorite_icon">Favorite icon</string>
+    <string name="like_icon">Favorite icon</string>
     <string name="share_icon">Share icon</string>
-    <string name="eye_icon">Eye icon</string>
+    <string name="view_icon">Eye icon</string>
 </resources>

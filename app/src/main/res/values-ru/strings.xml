@@ -5,7 +5,7 @@
     <string name="hello_world">Привет, Мир</string>
     <string name="description_post_author_avatar">Аватар автора</string>
     <string name="description_post_menu">Меню поста</string>
-    <string name="favorite_icon">Иконка лайков</string>
+    <string name="like_icon">Иконка лайков</string>
     <string name="share_icon">Иконка поделиться</string>
-    <string name="eye_icon">Иконка просмотров</string>
+    <string name="view_icon">Иконка просмотров</string>
 </resources>
