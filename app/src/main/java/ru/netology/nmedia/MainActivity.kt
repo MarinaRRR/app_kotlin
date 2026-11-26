@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import ru.netology.nmedia.databinding.ActivityMainBinding
 import ru.netology.nmedia.dto.Post
+import kotlin.math.floor
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             author = "Нетология. Университет интернет-профессий будущего",
             content = "Привет, это новая Нетология! Когда-то Нетология начиналась с интенсивов по онлайн-маркетингу. Затем появились курсы по дизайну, разработке, аналитике и управлению. Мы растём сами и помогаем расти студентам: от новичков до уверенных профессионалов. Но самое важное остаётся с нами: мы верим, что в каждом уже есть сила, которая заставляет хотеть больше, целиться выше, бежать быстрее. Наша миссия — помочь встать на путь роста и начать цепочку перемен → http://netolo.gy/fyb",
             published = "21 мая в 18:36",
-            likes = 999,
+            likes = 6399,
             share = 5,
             view = 20000,
             likedByMe = false
@@ -75,7 +76,7 @@ class MainActivity : AppCompatActivity() {
     fun toKString(value: Int): String {
         val k = value / 1000.0
         if (k in 1.0..<10.0) {
-            var s = "%.1f".format(k)
+            var s = (floor(k * 10) / 10).toString()
             s = s.dropLastWhile { it == '0' }.dropLastWhile { it == '.' }
             return "${s}K"
         }  else if(k >= 10) {
